@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    background-color: black;
+    color: white;
+    overflow-x:hidden;
+}
+body::selection{
+    color: gold;
+}
+/* header  */
+header{
+    background-color: transparent;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 -200px;
+}
+
+nav img{
+    height: 50px;
+    width: 200px;
+    object-fit: cover;
+}
+nav ul li{
+    list-style: none;
+}
+nav button{
+    height: 30px;
+    width: 80px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+nav button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* main */
+/* main{
+    height: 100vh;
+} */
+main #home{
+    background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(netflex-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 80%);
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    gap: 20px;
+}
+#home h1{
+    font-size: 55px;
+}
+#home p{
+    font-weight: 900;
+}
+#home span{
+    color: rgb(173, 173, 173);
+}
+#home input{
+    height: 50px;
+    width: 700px;
+    padding: 10px;
+    /* background: rgb(0, 0, 0, 0.5); */
+    background: transparent;
+    border: 1px solid rgb(167, 167, 167);
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    backdrop-filter: blur(3px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#home input:focus{
+    outline: 2px solid white;
+}
+::placeholder{
+    color: white;
+    transition: 0.2s;
+}
+#home button{
+    height: 50px;
+    width: 300px;
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+#home button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* trending */
+#trending{
+    padding: 0 150px;
+    margin-top: 50px;
+}
+#trending h1{
+    line-height: 2em;
+    font-size: 25px;
+}
+#trending .imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#trending img{
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+#trending img:hover{
+    transform: scale(1.1);
+}
+/* number  */
+#trending .num{
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+    font-size: 150px;
+    transition: 0.4s;
+    text-shadow: 0 0 10px white;
+}
+/* one  */
+#trending #one{
+    position: absolute;
+    left: 190px;
+    top: 870px;
+}
+/* two  */
+
+#trending #two{
+    position: absolute;
+    left: 440px;
+    top: 870px;
+}
+/* three  */
+
+#trending #three{
+    position: absolute;
+    left: 680px;
+    top: 870px;
+}
+/* four  */
+
+#trending #four{
+    position: absolute;
+    left: 900px;
+    top: 870px;
+    font-size: 150px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+}
+/* join */
+#join{
+    padding: 0 150px;   
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#join .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card h2{
+    margin: 20px 0;
+    font-size: 20px;
+    text-shadow: 0 0 5px white;
+}
+.card p{
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+}
+.card i{
+    display: flex;
+    justify-content: end;
+    padding-top: 70px;
+}
+.card #icon-2{
+    display: flex;
+    justify-content: end;
+    padding-top: 40px;
+}
+.cards .card{
+    padding: 20px;    
+    width: 400px;
+    height: 300px;    
+    border-radius: 10px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #152145, #240d17);
+}
+
+/* Questions */
+#Questions{
+    padding: 0 150px;
+    margin-bottom: 100px;
+}
+#Questions h1{
+    line-height: 3em;
+    font-size: 25px;
+}
+.details{
+    margin: 10px 0;
+}
+summary:hover{
+    /* opacity: 0.8; */
+    background-color: #555555;
+}
+.icon{
+    transition: 0.2s;
+}
+.icon:hover{
+    transform: rotate(45deg);
+}
+summary{
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.4s;
+}
+details p{
+    margin-top: 2px;
+    padding: 20px;
+    font-size: 25px;
+}
+details p{
+    background-color: #2e2e2e;
+}
+
+/* last  */
+#last{
+    padding: 0 150px;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.last p{
+    line-height: 3em;
+}
+
+
+#last input{
+    height: 50px;
+    width: 700px;
+    padding: 10px;
+    /* background: rgb(0, 0, 0, 0.5); */
+    background: transparent;
+    border: 1px solid rgb(167, 167, 167);
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    backdrop-filter: blur(3px);
+    margin: 15px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#last input:focus{
+    outline: 2px solid white;
+}
+::placeholder{
+    color: white;
+    transition: 0.2s;
+}
+
+#last button{
+    height: 50px;
+    width: 300px;
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+#last button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#last span{
+    opacity: 0.5;
+    margin: 10px 0;
+}
+
+
+/* <!-- FOOTER 🔥 --> */
+footer{
+    /* background-color: #152145; */
+    margin-bottom: 100px;
+    padding: 0 150px;
+}
+.footer-1{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    /* align-items: center; */
+}
+.ancer ul li{
+    list-style: none;
+}
+a{
+    color: white;
+    line-height: 2em;
+    opacity: 0.8;
+    line-height: 4em;
+}
+footer .ancer--0{
+    color: white;
+    line-height: 2em;
+    opacity: 0.8;
+    margin-left: -100px;
+}
+footer select{
+    margin: 50px 0;
+    height: 30px;
+    width: 120px;
+    border-radius: 2px;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+footer select:focus{
+    outline: 2px solid white;  
+}
+footer span{
+    display: block;
+}
+footer #sp-2{
+    opacity: 0.5;
+    font-size: 14px;
+}

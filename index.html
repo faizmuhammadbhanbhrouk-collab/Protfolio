@@ -1387,25 +1387,29 @@ const projects = [
     title:'Portfolio',
     desc:'A Simple Portfolio and designed to showcase my skills, projects, experience, and web development journey.',
     tags:['HTML','CSS'],
-    img:'/imgs/projects-1.png'
+    img:'/imgs/projects-1.png',
+    link:'website-1/index.html'
   },
   {
     title:'Netflex',
     desc:'A Netflix-inspired streaming website built using HTML and CSS. This project helped me practice modern web layouts, responsive design, navigation, movie sections, and attractive user interfaces.',
     tags:['HTML','CSS'],
-    img:'/imgs/project-4.png'
+    img:'/imgs/project-4.png',
+    link:'website-2/index.html'
   },
   {
     title:'Leanding Page',
     desc:'A modern landing page designed with a clean layout and attractive user interface. This project helped me improve my skills in webpage structure, CSS styling, responsive layouts, and visual design.',
     tags:['HTML','CSS'],
-    img:'/imgs/project-2.png'
+    img:'/imgs/project-2.png',
+    link:'website-3/index.html'
   },
   {
     title:'business',
     desc:'A modern and responsive business website created using HTML and CSS. The project focuses on presenting a professional brand identity, services, business information, and a user-friendly interface.',
     tags:['HTML','CSS'],
-    img:'/imgs/project-3.png'
+    img:'/imgs/project-3.png',
+    link:'website-4/index.html'
   }
 ];
  
@@ -1420,13 +1424,13 @@ projects.forEach((p,i)=>{
       <h3>${p.title}</h3>
       <p>${p.desc}</p>
       <div class="project-links">
-        <a href="/website-1/index.html" target="_blank">Live Demo ↗</a>
+        <a href="${p.link}" target="_blank">Live Demo ↗</a>
         <a href="#">Source Code ↗</a>
       </div>
     </div>
   `;
   grid.appendChild(card);
-  io.observe(card);
+  io.observe(card); 
  
   card.addEventListener('mousemove', e=>{
     const rect = card.getBoundingClientRect();

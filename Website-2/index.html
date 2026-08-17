@@ -1,35 +1,278 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header  -->
     <header>
-        <nav>
-            <h2 id="nav-h1">Portfolio</h2>
-            <ul>
-                <li><a href="index.html" style="color: #38bdf8;">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <img src="Netflix_Logo_PMS.png" alt="" />
+        <ul>
+          <li><button>Sign in</button></li>
+        </ul>
+      </nav>
     </header>
-
+    <!-- main  -->
     <main>
-        <div class="main">  
-        <h1>Hello, I'm <span id="main-sp">Faiz</span></h1>
-        <p>Frontend Developer & UI Designer</p>
-        <button><a href="project.html" style="color: white; text-decoration: none;">View Project</a></button>
+      <section id="home">
+        <h1>
+          Unlimited movies, TV <br />
+          shows, and more
+        </h1>
+        <p>Plans start at Rs 250. Cancel anytime.</p>
+        <span>Ready to watch? Enter your email to start your membership.</span>
+        <input type="email" placeholder="Email address" />
+        <button type="submit">
+          Try 14 Day for Rs 0
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+        </button>
+        <span>New members only. Terms below.</span>
+      </section>
+      <!-- trending -->
+      <section id="trending">
+        <h1>Trending Now</h1>
+        <div class="imgs">
+          <span id="one" class="num">1</span><img src="img-1.webp" alt="" />
+          <span id="two" class="num">2</span><img src="img-2.webp" alt="" />
+          <span id="three" class="num">3</span><img src="img-3.webp" alt="" />
+          <span id="four" class="num">4</span><img src="img-4.webp" alt="" />
         </div>
+      </section>
+
+      <!-- Join -->
+      <section id="join">
+        <h1>More Reasons to Join</h1>
+        <div class="cards">
+          <!-- card 1 -->
+          <div class="card" id="card-1">
+            <h2>Enjoy on your TV</h2>
+            <p>
+              Watch on Smart TVs, <br />
+              Playstation, Xbox, <br />
+              Chromecast, Apple TV, Blu-ray players, and more.
+            </p>
+            <i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="bi bi-tv"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M13.991 3l.024.001a1.5 1.5 0 0 1 .538.143.76.76 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.5 1.5 0 0 1-.143.538.76.76 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.5 1.5 0 0 1-.538-.143.76.76 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.5 1.5 0 0 1 .143-.538.76.76 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2"
+                />
+              </svg>
+            </i>
+          </div>
+          <!-- card 2 -->
+          <div class="card" id="card-2">
+            <h2>Download your shows to watch offline</h2>
+            <p>
+              Save your favorites easily and always have something to watch.
+            </p>
+            <i id="icon-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="bi bi-arrow-down-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+                /></svg
+            ></i>
+          </div>
+          <!-- card 3 -->
+          <div class="card" id="card-3">
+            <h2>Watch everywhere</h2>
+            <p>
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV.
+            </p>
+            <i
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="bi bi-emoji-smile"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                />
+                <path
+                  d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"
+                /></svg
+            ></i>
+          </div>
+          <!-- card 4 -->
+          <div class="card" id="card-4">
+            <h2>Create profiles for kids</h2>
+            <p>
+              Send kids on adventures with their favorite characters in a space
+              made just for them — free with your membership.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Questions -->
+       <section id="Questions">
+        <h1>Frequently Asked Questions</h1>
+        <!-- detail 1 -->
+        <div class="details">
+            <details>
+            <summary>What is Netflix? <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></div> </summary>
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. <br><br>
+                You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!yyy</p>
+        </details>
+        </div>
+        <!-- detali 2 -->
+         <div class="details">
+            <details>
+            <summary>How much does Netflix cost? <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></div> </summary>
+            <p>New members can try 14 days of Netflix for Rs 0. After the free trial ends, your plan will automatically renew at the regular price depending on the plan you select. Plans range from Rs 250 to Rs 1,100. <br><br>
+
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device. No extra costs, cancel anytime.</p>
+        </details>
+        </div>
+        
+        <!-- detali 3 -->
+         
+         <div class="details">
+            <details>
+            <summary>Where can I watch? <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></div> </summary>
+            <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. <br><br>
+
+You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+        </details>
+        </div>
+         
+        <!-- detali 4 -->
+         
+         <div class="details">
+            <details>
+            <summary>How do I cancel? <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></div> </summary>
+            <p>Netflix is flexible. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+        </details>
+        </div>
+         
+        <!-- detali 5 -->
+         
+         <div class="details">
+            <details>
+            <summary>What can I watch on Netflix? <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></div> </summary>
+            <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+        </details>
+        </div>
+         
+        <!-- detali 6 -->
+         
+         <div class="details">
+            <details>
+            <summary>Is Netflix good for kids? <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg></div> </summary>
+            <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. <br><br>
+
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+        </details>
+        </div>
+       </section>
+
+       <!-- last  -->
+        <section id="last">
+            <div class="last">
+                <p>Ready to watch? Enter your email to start your membership.</p>
+                <input type="email" placeholder="Email address">
+                <button type="submit">Try 14 Days for Rs 0 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg></button>
+                <span>This offer is only valid for new members. This offer is non-transferrable. You agree that Netflix will charge the membership fee at the end of the free trial to your payment method and will automatically continue your membership until you cancel. Some methods of payment may not be eligible to redeem this offer.</span>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="footer">
-            <p>© 2026 Faiz Portfolio</p>
+    <!-- FOOTER 🔥 -->
+     <footer>
+         <a href="#" id="an">Questions? Contact us.</a>
+         <div class="footer-1">
+            <!-- ancer 1 -->
+            <div class="ancer">
+                <ul>
+                    <li><a href="#" class="ancer--0">FAQ</a></li>
+                    <li><a href="#" class="ancer--0">Investor Relations</a></li>
+                    <li><a href="#" class="ancer--0">Privacy</a></li>
+                    <li><a href="#" class="ancer--0">Speed Test</a></li>
+                </ul>
+            </div>
+            <!-- ancer 2 -->
+             <div class="ancer">
+                <ul>
+                    <li><a href="#" class="ancer--0">Help Center</a></li>
+                    <li><a href="#" class="ancer--0">Jobs</a></li>
+                    <li><a href="#" class="ancer--0">Cookie Preferences</a></li>
+                    <li><a href="#" class="ancer--0">Legal Notices</a></li>
+                </ul>
+            </div>
+            <!-- ancer 3 -->
+             <div class="ancer">
+                <ul>
+                    <li><a href="#" class="ancer--0">Account</a></li>
+                    <li><a href="#" class="ancer--0">Ways to Watch</a></li>
+                    <li><a href="#" class="ancer--0">Corporate Information</a></li>
+                    <li><a href="#" class="ancer--0">Only on Netflix</a></li>
+                </ul>
+            </div>
+            <!-- ancer 4 -->
+             <div class="ancer">
+                <ul>
+                    <li><a href="#" class="ancer--0">Media Center</a></li>
+                    <li><a href="#" class="ancer--0">Terms of Use</a></li>
+                    <li><a href="#" class="ancer--0">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-    </footer>
-</body>
+        <select><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+  <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+  <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+</svg></i>English<option value="Language">English</option></select>
+        <span>Netflix Pakistan</span> <br>
+        <span id="sp-2">This page is protected by Google reCAPTCHA to ensure you're not a bot.</span>
+     </footer>
+  </body>
 </html>
+
+
+
